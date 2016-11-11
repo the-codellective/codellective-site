@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<style>
+
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.wrapper-row {
+	width:100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+@media screen and (max-width: 800px) {
+	.wrapper-row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.wrapper-row > img {
+		width: 100%;
+	}
+	.wrapper > div {
+		text-align: center;
+	}
+	footer > span {
+		width: 150px;
+	}
+}
+
+h1 {
+	line-height: 1em;
+	padding: 0;
+	margin-bottom: 10px;
+	font-family: "Helvetica";
+	font-weight: 900;
+	color: #364a7b;
+}
+img {
+	width: 140px;
+	animation-name: rotate;
+	display: inline;
+	animation-duration: 5s;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+p {
+	padding-top: 0px;
+	margin-top: 0px;
+	font-family: "Karla", sans-serif;
+	color: rgba(80, 80, 80, 1);
+}
+
+footer {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+footer > span {
+	text-align: center;
+	font-family: "Karla", sans-serif;
+	color: rgba(80, 80, 80, 1);
+}
+
+footer > span > a {
+	color: #364a7b;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+</style>
+<div class="wrapper">
+	<div class="wrapper-row">
+		<img src="codellective_splash_01.svg"> 
+		<div>
+			<h1> The <br> Co{de}llective; </h1>
+			<p>is coming soon.
+		</div>
+	</div>
+	<footer>
+		<span>
+		for enquiries, <br> drop us an email at
+		<a href="mailto:hello@codellective.sg">
+			hello@codellective.sg
+		</a>
+		</span>
+	</footer>
+</div>
+
+
