@@ -1,0 +1,87 @@
+body {
+    font-family: "Karla";
+    font-size: 100%;
+    background-color: rgba(250, 250, 250, 1);
+
+    /* 60px padding needed to accomodate navbar */
+    padding-top: 90px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #324554;
+}
+
+h1 em {
+    font-style: normal;
+    font-weight: bold;
+    color: #EC6464; /*bracket*/
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    color: #EC6464;
+}
+
+p {
+    padding-top: 1rem;
+}
+
+input[type=text] {
+    font-family: "Roboto Mono";
+}
+
+.link {
+    font-family: "Roboto Mono";
+    font-size: 0.8rem;
+    color: #77BDA3;
+}
+
+section {
+    /* Borders for testing only */
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+section:nth-child(2n) {
+    background-color: rgba(250, 250, 250, 1);
+}
+
+footer {
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    color: white;
+    background-color: #325382;
+}
+
+
+@media (min-width: 768px) {
+    body {
+    font-size: 1.2rem;
+    }
+    h1 {
+    font-size: 2.4rem;
+    }
+    h2 {
+    font-size:1.8rem;
+    }
+    p {
+    font-size: 1.2rem;
+    }
+    .lead {
+    font-size: 1.5rem;
+    }
+    .link {
+    font-size: 1.0rem;
+    }
+}
+@media (min-width: 1200px) {
+    section > * {
+    max-width: 1140px !important;
+    }
+}

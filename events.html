@@ -1,184 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap-4.0.0-alpha.5-dist/css/bootstrap-flex.min.css"> 
-    <style>
-        body {
-            font-family: "Karla";
-            font-size: 100%;
-            background-color: rgba(250, 250, 250, 1);
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap-4.0.0-alpha.5-dist/css/bootstrap-flex.min.css"> 
 
-            /* 60px padding needed to accomodate navbar */
-            padding-top: 90px;
-        }
+  <!--Base CSS for all pages of this website -->
+  <link rel="stylesheet" href="./css/base.css"> 
+  
+  <!-- Special CSS for this page only -->
+  <style>
+    .event-title {
+      font-weight: bold;
+      font-variant: small-caps;
+      color: #EC6464;
+    }
+    .event-bar {
+      padding-top: 1rem; 
+    }
+  </style>
+</head>
 
-        h1 {
-          font-size: 2rem;
-          color: #324554;
-        }
+<!-- Body starts here -->
 
-        h1 em {
-          font-style: normal;
-          font-weight: bold;
-          color: #EC6464; /*bracket*/
-        }
+<body>
+  <nav 
+    class="navbar navbar-fixed-top navbar-light"
+    style="background-color: white;"
+  >
+    <!--
+    <img src="./img/codellective_icon.svg" width="50px"/> 
+    The Co{de}llective;
+    -->
+    <a class="navbar-brand" href="./index-wip.html">
+      <img alt="The Co{de}llective" src ="./img/codellective_logo.png">
+    </a>
+    <div class="float-xs-right">
+      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+          <ul class="nav navbar-nav text-xs-right">
+            <li class="nav-item">
+              <a class="nav-link" href="./events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="...">Sign up</a>
+            </li>
+          </ul>
+      </div>
+  </nav>
 
-        h2 {
-          font-size: 1.5rem;
-          font-weight: bold;
-          text-transform: lowercase;
-          font-variant: small-caps;
-          color: #EC6464;
-        }
+  <div class="container">
+    <h1> Calendar of events </h1>
+  </div>
 
-        p {
-          padding-top: 1rem;
-        }
-
-        input[type=text] {
-          font-family: "Roboto Mono";
-        }
-
-        a {
-          font-family: "Roboto Mono";
-          font-size: 0.8rem;
-          color: #77BDA3;
-        }
-
-        section {
-          /* Borders for testing only */
-          background-color: rgba(255, 255, 255, 1);
-          padding-top: 2rem;
-          padding-bottom: 2rem;
-        }
-
-        section:nth-child(2n) {
-          background-color: rgba(250, 250, 250, 1);
-        }
-
-        footer {
-          /* Set the fixed height of the footer here */
-          height: 60px;
-          line-height: 60px; /* Vertically center the text there */
-          color: white;
-          background-color: #325382;
-        }
-      
-
-        @media (min-width: 768px) {
-          body {
-            font-size: 1.2rem;
-          }
-          h1 {
-            font-size: 2.4rem;
-          }
-          h2 {
-            font-size:1.8rem;
-          }
-          p {
-            font-size: 1.2rem;
-          }
-          .lead {
-            font-size: 1.5rem;
-          }
-          a {
-            font-size: 1.0rem;
-          }
-        }
-        @media (min-width: 1200px) {
-          section > * {
-            max-width: 1140px !important;
-          }
-        }
-
-    </style>
-
-    <style>
-      .event-title {
-        font-weight: bold;
-        font-variant: small-caps;
-        color: #EC6464;
-      }
-      .event-bar {
-        padding-top: 1rem; 
-      }
-    </style>
-
-
-  </head>
-  <body>
-    <nav 
-      class="navbar navbar-fixed-top navbar-light"
-      style="background-color: white;"
-    >
-      <!--
-      <img src="./img/codellective_icon.svg" width="50px"/> 
-      The Co{de}llective;
-      -->
-      <a class="navbar-brand" href="./index-wip.html">
-        <img alt="The Co{de}llective" src ="./img/codellective_logo.png">
-      </a>
-      <div class="float-xs-right">
-        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-          <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-            <ul class="nav navbar-nav text-xs-right">
-              <li class="nav-item">
-                <a class="nav-link" href="./events.html"Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="...">Sign up</a>
-              </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="container">
-      <h1> Calendar of events </h1>
-    </div>
-
-    <section>
-      <div class="container text-xs-center">
-        <img src="./img/event_1.svg"></img>
-          <div class = "row flex-items-xs-middle event-bar">
-            <div class="col-xs-8 text-xs-left">
-              <span class="event-title">
-                28 Jan 2017<br>
-                Chinese New Year Workshop
-              </span>
-            </div>
-            <div class="col-xs text-xs-right">
-              <button class="btn btn-primary pull-right" type="button">Register</button>
-            </div>
+  <section>
+    <div class="container text-xs-center">
+      <img src="./img/event_1.svg"></img>
+        <div class = "row flex-items-xs-middle event-bar">
+          <div class="col-xs-8 text-xs-left">
+            <span class="event-title">
+              28 Jan 2017<br>
+              Chinese New Year Workshop
+            </span>
           </div>
-          <hr>
-          <div class="text-xs-left">
-            <p> We welcome the Year of the Rooster with an appropriately-
-                themed workshop. Learn how to build your own crazy psycho
-                rooster that will terrorise your family. Or don't -- 
-                learn instead 
-                how to build a computer vision system that can
-                classify different types of Chinese New Year snacks!
-
-            <p> <em>Warning: extremely lame.</em> 
+          <div class="col-xs text-xs-right">
+            <button class="btn btn-primary pull-right" type="button">Register</button>
           </div>
         </div>
-      </section>
+        <hr>
+        <div class="text-xs-left">
+          <p> We welcome the Year of the Rooster with an appropriately-
+              themed workshop. Learn how to build your own crazy psycho
+              rooster that will terrorise your family. Or don't -- 
+              learn instead 
+              how to build a computer vision system that can
+              classify different types of Chinese New Year snacks!
 
-    <footer class="text-xs-center">
-        Copyright (C) 2016 thecodellective
-    </footer>
+          <p> <em>Warning: extremely lame.</em> 
+        </div>
+      </div>
+    </section>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-    <!-- Google Fonts CDN -->
-    <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Mono" rel="stylesheet">
-  </body>
+  <footer class="text-xs-center">
+      Copyright (C) 2016 thecodellective
+  </footer>
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <!-- Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Karla|Roboto+Mono" rel="stylesheet">
+</body>
 </html>
